@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AESTORE</title>
+  <meta charset="UTF-8">
+  <link rel="StyleSheet" href="styles.css" type="text/css">
+ </head>
+<body>
+<div>
+   <header>  <!-- listado del encabezado -->                    
+    <ul>
+        <li><img src="aestore.png" alt="logo"> </li>                         
+    </ul><br><br><br><br>     
+   </header>
+        <!-- formulario para nuevo usuario -->
+  <div>
+    <center><form id=inicio name=form method="post" action="index.html">
+       Nuevo usuario<br><br>
+       Ingrese el nombre de su usuario con su contraseña para crear su cuenta<br><br>
+        Ingresar usuario <br>
+        <input type="name" name="nombre" required onfocus="this.value=''"><br><br>
+        Ingresar contrasena <br>
+        <input type="password" name="password" required onfocus="this.value=''"><br><br>
+        <input type="button" value="confirmar" onclick="confirmar()" ><br><br>
+        <a href="index.html">volver</a>
+      </form></center>
+    </div>
+
+<!-- pie de pagina -->
+</div>
+<footer><h3>© 2025. All rights reserved</h3></div></footer>
+</div>
+<script>
+function confirmar() {
+  if (document.form.password.value=='' && document.form.nombre.value==''){ 
+    alert("ingrese datos solicitados.");            
+  } 
+  else{
+    alert("Usuario creado.");
+    document.form.submit(); 
+  } 
+}
+</script>
+ </body>
+</html>

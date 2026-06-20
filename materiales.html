@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AESTORE</title>
+  <meta charset="UTF-8">
+  <link rel="StyleSheet" href="styles.css" type="text/css">
+ </head>
+<body><!-- listado de encabezado -->
+    <header>                     
+        <ul>
+            <li><img src="aestore.png" alt="logo"> </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="proveedores.html">Proveedores</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><input type="button" value="INICIO"  onclick="document.getElementById('ingreso').style.display='block'"></button></li>                            
+        </ul><br><br><br><br>     
+    </header>
+    <!-- contenido pagina materiales -->
+<div id="contenido">
+    <div><h1>MATERIALES</h1><br>
+        <h2>En este espacio podra consultar<br>
+         informacion de acuerdo al stock de <br> 
+         materiales, referencias cantidades <br>
+         y localizacion de cada uno de ellos <br>
+         dentro del almacen para poder <br>
+         hacer sus solicitudes y retiros</h2> 
+         </div><br><br><br><br><br><br><br><br>
+    <img src="materiales.png">
+    </div>
+<div id="ingreso" class="modal">
+    <center><form id=inicio name=form method="post" action="menu.html">
+        Iniciar sesion<br><br>
+        <input type="radio" name="loginn" value="admin">administrador
+        <input type="radio" name="loginn" value="usuario">visualizador<br><br>
+        Ingresar usuario <br>
+        <input type="name" name="nombre" required onfocus="this.value=''"><br><br>
+        Ingresar contrasena <br>
+        <input type="password" name="password" required onfocus="this.value=''"><br><br>
+        <input type="button" value="confirmar" onclick="iniciar()"><br><br>
+        <a href="nuevousuario.html">Registrar un nuevo usuario</a><br><br>
+        <a href="index.html">Salir</a>
+        </form></center>
+    </div>
+    
+<!-- pie de pagina -->
+<footer><h3>© 2025. All rights reserved</h3></div></footer>
+<script src="funciones.js"></script> 
+</body>
+</html>
